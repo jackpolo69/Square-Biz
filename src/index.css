@@ -1,0 +1,68 @@
+:root {
+  /* Colors */
+  --color-tiffany: #0ABAB5;
+  --color-tiffany-light: #AEECEB;
+  --color-tiffany-dark: #007672;
+  --color-white: #FFFFFF;
+  --color-black: #0F0F0F;
+  --color-dark-gray: #1A1A1A;
+  --color-light-gray: #F5F5F5;
+  
+  /* Typography */
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Outfit', sans-serif;
+  
+  /* Layout */
+  --container-width: 1200px;
+  --header-height: 80px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-white);
+  color: var(--color-black);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Utilities */
+.text-tiffany { color: var(--color-tiffany); }
+.bg-tiffany { background-color: var(--color-tiffany); }
+.text-gradient {
+  background: linear-gradient(135deg, var(--color-tiffany) 0%, var(--color-tiffany-dark) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+section {
+  padding: 5rem 0;
+}
