@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { Rocket, ShieldCheck, PenTool, Database, CreditCard, Globe } from 'lucide-react'
+import { Rocket, ShieldCheck, PenTool, Database, CreditCard, Globe, Briefcase, Search, Palette, RefreshCw, FileText, Scale, Stamp, Scroll, Handshake, Umbrella, Landmark, TrendingUp } from 'lucide-react'
 import './Services.css'
 
 const services = [
@@ -13,6 +13,66 @@ const services = [
         icon: <CreditCard size={40} />,
         title: "Proprietary Credit",
         description: "Exclusive access to funding and credit building tools."
+    },
+    {
+        icon: <Briefcase size={40} />,
+        title: "Business Formation",
+        description: "Streamlined entity setup and registration."
+    },
+    {
+        icon: <Search size={40} />,
+        title: "Domain Purchasing",
+        description: "Secure your perfect digital address."
+    },
+    {
+        icon: <Palette size={40} />,
+        title: "Logo Creations",
+        description: "Distinctive visual identity design."
+    },
+    {
+        icon: <RefreshCw size={40} />,
+        title: "Corporate Reinstatement",
+        description: "Restore your business to good standing."
+    },
+    {
+        icon: <FileText size={40} />,
+        title: "Tax Filing Made Easy",
+        description: "Simplified tax preparation and filing."
+    },
+    {
+        icon: <Scale size={40} />,
+        title: "Compliance (S.O.S. & F.T.B.)",
+        description: "Regulatory adherence and filing compliance."
+    },
+    {
+        icon: <Stamp size={40} />,
+        title: "24/7 Notary",
+        description: "Round-the-clock notarization services."
+    },
+    {
+        icon: <Scroll size={40} />,
+        title: "Agreement & Contract Prep",
+        description: "Fully executable contracts and agreements."
+    },
+    {
+        icon: <Umbrella size={40} />,
+        title: "Business Insurance",
+        description: "Liability and asset protection coverage."
+    },
+    {
+        icon: <Landmark size={40} />,
+        title: "Trust Formations",
+        description: "Secure asset protection and estate planning structures."
+    },
+    {
+        icon: <TrendingUp size={40} />,
+        title: "Business Credit Building",
+        description: "Build credit with NO personal guarantee up to Tier 3."
+    },
+    {
+        icon: <Handshake size={40} />,
+        title: "Strategic Partnership",
+        description: "30% Equity + 30% Rev Share. We handle all your business needs exponentially."
     },
     {
         icon: <Globe size={40} />,
@@ -42,7 +102,7 @@ const Services = () => {
             <div className="container">
                 <div className="section-header">
                     <h2>Full Service. <span className="text-tiffany">Full Speed.</span></h2>
-                    <p>Everything you need to manifest your vision and dominate your market.</p>
+                    <p>Everything you need to manifest your vision and dominate your market. Available individually or as a comprehensive bundle.</p>
                 </div>
 
                 <div className="services-grid">

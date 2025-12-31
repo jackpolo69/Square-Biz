@@ -21,6 +21,10 @@
     align-items: center;
 }
 
+.logo {
+    cursor: pointer;
+}
+
 .logo img {
     height: 50px;
     width: auto;
@@ -42,4 +46,42 @@
 
 .nav-links a:hover {
     color: var(--color-tiffany);
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0.8rem 0;
+    }
+
+    .navbar.scrolled {
+        padding: 0.6rem 0;
+    }
+
+    .logo img {
+        height: 32px;
+        /* Smaller logo for mobile */
+        width: auto;
+        /* Critical: prevent logo from being squashed */
+        flex-shrink: 0;
+        object-fit: contain;
+    }
+
+    .nav-links {
+        gap: 0.5rem;
+        /* Tighter spacing */
+    }
+
+    .nav-links a {
+        font-size: 0.7rem;
+        /* Smaller text */
+        white-space: nowrap;
+        /* Prevent text wrapping */
+    }
+
+    /* Target the button specifically inside navigation to make it smaller */
+    .nav-links .btn {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.7rem;
+        min-width: auto;
+    }
 }

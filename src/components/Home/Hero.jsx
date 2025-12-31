@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import Button from '../UI/Button'
+import Modal from '../UI/Modal'
+import ChatAssistant from '../UI/ChatAssistant'
 import './Hero.css'
 
 const Hero = () => {
+    const [isChatOpen, setIsChatOpen] = useState(false)
+
     return (
         <section className="hero">
             <div className="container hero-content">
@@ -23,8 +27,10 @@ const Hero = () => {
                         From aspiring creatives to established enterprises, we manifest your vision.
                     </p>
                     <div className="hero-actions">
-                        <Button variant="primary">Initialize Scale</Button>
-                        <Button variant="outline">Learn More</Button>
+                        <a href="#audience" style={{ textDecoration: 'none' }}>
+                            <Button variant="primary">Initialize Scale</Button>
+                        </a>
+                        <Button variant="outline" onClick={() => setIsChatOpen(true)}>Learn More</Button>
                     </div>
                 </motion.div>
 
@@ -39,6 +45,10 @@ const Hero = () => {
                     <img src="/assets/logo.png" alt="Square Biz Logo" className="hero-logo-large" />
                 </motion.div>
             </div>
+
+            <Modal isOpen={isChatOpen} onClose={() => setIsChatOpen(false)}>
+                <ChatAssistant />
+            </Modal>
         </section>
     )
 }

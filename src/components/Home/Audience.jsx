@@ -5,7 +5,7 @@ import './Audience.css'
 
 const Audience = () => {
     return (
-        <section className="audience">
+        <section className="audience" id="audience">
             <div className="container">
                 <div className="audience-grid">
 
