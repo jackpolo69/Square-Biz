@@ -10,10 +10,14 @@
     margin-bottom: 4rem;
 }
 
-.footer-brand h3 {
-    font-size: 2rem;
+.footer-logo {
+    height: 40px;
+    width: auto;
     margin-bottom: 0.5rem;
-    color: var(--color-tiffany);
+    object-fit: contain;
+    /* Force logo to be Mint Green (#0ABAB5) using CSS filter */
+    /* Generated using https://codepen.io/sosuke/pen/Pjoqqp for #0ABAB5 */
+    filter: brightness(0) saturate(100%) invert(67%) sepia(37%) saturate(693%) hue-rotate(123deg) brightness(92%) contrast(92%);
 }
 
 .footer-brand p {

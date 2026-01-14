@@ -1,0 +1,72 @@
+.contact-form-container {
+    text-align: center;
+    padding: 1rem;
+    color: var(--color-black);
+}
+
+.contact-form-container h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-tiffany-dark);
+}
+
+.contact-form-container p {
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.contact-form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.contact-form label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--color-dark-gray);
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--color-tiffany);
+    box-shadow: 0 0 0 2px rgba(10, 186, 181, 0.1);
+}
+
+.direct-contact {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #eee;
+}
+
+.email-link {
+    display: block;
+    font-size: 1.2rem;
+    color: var(--color-tiffany-dark);
+    font-weight: 700;
+    text-decoration: none;
+    margin-top: 0.5rem;
+}
+
+.email-link:hover {
+    text-decoration: underline;
+}

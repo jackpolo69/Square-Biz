@@ -1,9 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import Button from '../UI/Button'
+import Modal from '../UI/Modal'
+import { BusinessOwnerForm, VisionaryForm } from './SignUpForms'
 import './Audience.css'
 
 const Audience = () => {
+    const [activeModal, setActiveModal] = useState(null) // 'business' | 'visionary' | null
+
+    const handleClose = () => setActiveModal(null)
+
+    const handleFormSubmit = (data) => {
+        console.log("Form Submitted:", data)
+        alert(`Application Received! We will contact you at ${data.email} shortly.`)
+        handleClose()
+    }
+
     return (
         <section className="audience" id="audience">
             <div className="container">
@@ -20,7 +32,7 @@ const Audience = () => {
                             <h3>The Business Owner</h3>
                             <p className="pain-point">Can't seem to scale to your fullest potential?</p>
                             <p className="solution">We inject automated systems and funding strategies to shatter your glass ceiling.</p>
-                            <Button variant="outline">Scale Now</Button>
+                            <Button variant="outline" onClick={() => setActiveModal('business')}>Scale Now</Button>
                         </div>
                     </motion.div>
 
@@ -35,12 +47,20 @@ const Audience = () => {
                             <h3>The Visionary</h3>
                             <p className="pain-point">Looking to manifest your vision from nothing?</p>
                             <p className="solution">We provide the blueprint, the tools, and the platform to turn ideas into empires.</p>
-                            <Button variant="primary">Manifest Vision</Button>
+                            <Button variant="primary" onClick={() => setActiveModal('visionary')}>Manifest Vision</Button>
                         </div>
                     </motion.div>
 
                 </div>
             </div>
+
+            <Modal isOpen={activeModal === 'business'} onClose={handleClose}>
+                <BusinessOwnerForm onSubmit={handleFormSubmit} />
+            </Modal>
+
+            <Modal isOpen={activeModal === 'visionary'} onClose={handleClose}>
+                <VisionaryForm onSubmit={handleFormSubmit} />
+            </Modal>
         </section>
     )
 }

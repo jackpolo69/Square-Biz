@@ -1,12 +1,12 @@
 import React from 'react'
 import './Footer.css'
 
-const Footer = () => {
+const Footer = ({ onContactClick, onPrivacyClick, onTermsClick, onDisclaimerClick, onCookieClick }) => {
     return (
         <footer className="footer">
             <div className="container footer-content">
                 <div className="footer-brand">
-                    <h3>Square Biz</h3>
+                    <img src="/assets/logo.png" alt="Square Biz" className="footer-logo" />
                     <p>Powered by mythOS</p>
                 </div>
                 <div className="footer-links">
@@ -18,15 +18,18 @@ const Footer = () => {
                     </div>
                     <div className="link-group">
                         <h4>Company</h4>
-                        <a href="#">About Us</a>
-                        <a href="#">Contact</a>
-                        <a href="#">Privacy</a>
+                        <a href="#about">About Us</a>
+                        <a href="#" onClick={(e) => { e.preventDefault(); onContactClick(); }}>Contact</a>
+                        <a href="#" onClick={(e) => { e.preventDefault(); onPrivacyClick(); }}>Privacy</a>
+                        <a href="#" onClick={(e) => { e.preventDefault(); onTermsClick(); }}>Terms</a>
+                        <a href="#" onClick={(e) => { e.preventDefault(); onDisclaimerClick(); }}>Disclaimer</a>
+                        <a href="#" onClick={(e) => { e.preventDefault(); onCookieClick(); }}>Cookie Policy</a>
                     </div>
                     <div className="link-group">
                         <h4>Connect</h4>
-                        <a href="#">LinkedIn</a>
-                        <a href="#">Twitter</a>
-                        <a href="#">Instagram</a>
+                        <a href="https://www.linkedin.com/company/square-biz-ai/people/?viewAsMember=true" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                        <a href="https://twitter.com/squarebizai" target="_blank" rel="noopener noreferrer">Twitter</a>
+                        <a href="https://instagram.com/squarebizai" target="_blank" rel="noopener noreferrer">Instagram</a>
                     </div>
                 </div>
             </div>
