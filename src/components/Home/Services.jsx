@@ -5,53 +5,22 @@ import './Services.css'
 
 const services = [
     {
+        id: "partnerships",
+        icon: <Handshake size={40} />,
+        title: "Strategic Partnership",
+        description: "30% Equity + 30% Rev Share. We handle all your business needs exponentially."
+    },
+    {
         id: "scaling",
         icon: <Rocket size={40} />,
         title: "Business Scaling",
         description: "Exponential growth strategies powered by quantum intelligence."
     },
     {
-        icon: <CreditCard size={40} />,
-        title: "Proprietary Credit",
-        description: "Exclusive access to funding and credit building tools."
-    },
-    {
-        id: "formation",
-        icon: <Briefcase size={40} />,
-        title: "Business Formation",
-        description: "Streamlined entity setup and registration."
-    },
-    {
-        icon: <Search size={40} />,
-        title: "Domain Purchasing",
-        description: "Secure your perfect digital address."
-    },
-    {
-        icon: <Palette size={40} />,
-        title: "Logo Creations",
-        description: "Distinctive visual identity design."
-    },
-    {
-        icon: <RefreshCw size={40} />,
-        title: "Corporate Reinstatement",
-        description: "Restore your business to good standing."
-    },
-    {
-        id: "tax-filing",
-        icon: <FileText size={40} />,
-        title: "Tax Filing Made Easy",
-        description: "Simplified tax preparation and filing."
-    },
-    {
-        icon: <Scale size={40} />,
-        title: "Compliance (S.O.S. & F.T.B.)",
-        description: "Regulatory adherence and filing compliance."
-    },
-    {
-        id: "notary",
-        icon: <Stamp size={40} />,
-        title: "24/7 Notary",
-        description: "Round-the-clock notarization services."
+        id: "automation",
+        icon: <ShieldCheck size={40} />,
+        title: "Full Automation",
+        description: "End-to-end business process automation."
     },
     {
         id: "agreements",
@@ -60,9 +29,28 @@ const services = [
         description: "Fully executable contracts and agreements."
     },
     {
-        icon: <Umbrella size={40} />,
-        title: "Business Insurance",
-        description: "Liability and asset protection coverage."
+        id: "formation",
+        icon: <Briefcase size={40} />,
+        title: "Business Formation",
+        description: "Streamlined entity setup and registration."
+    },
+    {
+        id: "reinstatement",
+        icon: <RefreshCw size={40} />,
+        title: "Corporate Reinstatement",
+        description: "Restore your business to good standing."
+    },
+    {
+        id: "compliance",
+        icon: <Scale size={40} />,
+        title: "Compliance (S.O.S. & F.T.B.)",
+        description: "Regulatory adherence and filing compliance."
+    },
+    {
+        id: "tax-filing",
+        icon: <FileText size={40} />,
+        title: "Tax Filing Made Easy",
+        description: "Simplified tax preparation and filing."
     },
     {
         id: "trusts",
@@ -71,16 +59,22 @@ const services = [
         description: "Secure asset protection and estate planning structures."
     },
     {
-        id: "credit-building",
-        icon: <TrendingUp size={40} />,
-        title: "Business Credit Building",
-        description: "Build credit with NO personal guarantee up to Tier 3."
+        id: "insurance",
+        icon: <Umbrella size={40} />,
+        title: "Business Insurance",
+        description: "Liability and asset protection coverage."
     },
     {
-        id: "partnerships",
-        icon: <Handshake size={40} />,
-        title: "Strategic Partnership",
-        description: "30% Equity + 30% Rev Share. We handle all your business needs exponentially."
+        id: "domains",
+        icon: <Search size={40} />,
+        title: "Domain Purchasing",
+        description: "Secure your perfect digital address."
+    },
+    {
+        id: "logos",
+        icon: <Palette size={40} />,
+        title: "Logo Creations",
+        description: "Distinctive visual identity design."
     },
     {
         id: "web-design",
@@ -89,22 +83,34 @@ const services = [
         description: "Stunning, high-performance websites that convert."
     },
     {
-        id: "funnels",
-        icon: <Database size={40} />,
-        title: "Automated Sales Funnels",
-        description: "Self-driving revenue generation systems."
-    },
-    {
         id: "branding",
         icon: <PenTool size={40} />,
         title: "Media & Branding",
         description: "Compelling visual identity and brand storytelling."
     },
     {
-        id: "automation",
-        icon: <ShieldCheck size={40} />,
-        title: "Full Automation",
-        description: "End-to-end business process automation."
+        id: "funnels",
+        icon: <Database size={40} />,
+        title: "Automated Sales Funnels",
+        description: "Self-driving revenue generation systems."
+    },
+    {
+        id: "credit-building",
+        icon: <TrendingUp size={40} />,
+        title: "Business Credit Building",
+        description: "Build credit with NO personal guarantee up to Tier 3."
+    },
+    {
+        id: "proprietary-credit",
+        icon: <CreditCard size={40} />,
+        title: "Proprietary Credit",
+        description: "Exclusive access to funding and credit building tools."
+    },
+    {
+        id: "notary",
+        icon: <Stamp size={40} />,
+        title: "24/7 Notary",
+        description: "Round-the-clock notarization services."
     }
 ]
 
