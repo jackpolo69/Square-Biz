@@ -5,6 +5,7 @@ import './Services.css'
 
 const services = [
     {
+        id: "scaling",
         icon: <Rocket size={40} />,
         title: "Business Scaling",
         description: "Exponential growth strategies powered by quantum intelligence."
@@ -75,6 +76,7 @@ const services = [
         description: "30% Equity + 30% Rev Share. We handle all your business needs exponentially."
     },
     {
+        id: "web-design",
         icon: <Globe size={40} />,
         title: "Web Design",
         description: "Stunning, high-performance websites that convert."
@@ -90,6 +92,7 @@ const services = [
         description: "Compelling visual identity and brand storytelling."
     },
     {
+        id: "automation",
         icon: <ShieldCheck size={40} />,
         title: "Full Automation",
         description: "End-to-end business process automation."
@@ -109,6 +112,7 @@ const Services = () => {
                     {services.map((service, index) => (
                         <motion.div
                             key={index}
+                            id={service.id}
                             className="service-card"
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}

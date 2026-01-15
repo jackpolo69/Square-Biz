@@ -12,9 +12,9 @@ const Footer = ({ onContactClick, onPrivacyClick, onTermsClick, onDisclaimerClic
                 <div className="footer-links">
                     <div className="link-group">
                         <h4>Services</h4>
-                        <a href="#">Business Scaling</a>
-                        <a href="#">Web Design</a>
-                        <a href="#">Automation</a>
+                        <a href="#scaling">Business Scaling</a>
+                        <a href="#web-design">Web Design</a>
+                        <a href="#automation">Automation</a>
                     </div>
                     <div className="link-group">
                         <h4>Company</h4>
