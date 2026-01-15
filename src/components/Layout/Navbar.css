@@ -8,6 +8,15 @@
     transition: all 0.3s ease;
 }
 
+/* Default transparent state */
+.navbar:not(.scrolled) .nav-links a {
+    color: #ffffff;
+}
+
+.navbar:not(.scrolled) .logo img {
+    filter: brightness(0) invert(1);
+}
+
 .navbar.scrolled {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
