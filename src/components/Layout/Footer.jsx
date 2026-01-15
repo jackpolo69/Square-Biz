@@ -33,7 +33,7 @@ const Footer = ({ onContactClick, onPrivacyClick, onTermsClick, onDisclaimerClic
                         <a href="https://www.linkedin.com/company/square-biz-ai/people/?viewAsMember=true" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                         <a href="https://twitter.com/squarebizai" target="_blank" rel="noopener noreferrer">Twitter</a>
                         <a href="https://instagram.com/squarebizai" target="_blank" rel="noopener noreferrer">Instagram</a>
-                        <a href="https://facebook.com/squarebizai" target="_blank" rel="noopener noreferrer">Facebook</a>
+                        <a href="https://www.facebook.com/profile.php?id=61586539085249" target="_blank" rel="noopener noreferrer">Facebook</a>
                         <a href="https://www.tiktok.com/@squarebizai" target="_blank" rel="noopener noreferrer">TikTok</a>
                         <a href="https://www.youtube.com/@squarebizai" target="_blank" rel="noopener noreferrer">YouTube</a>
                     </div>
