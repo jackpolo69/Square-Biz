@@ -12,9 +12,12 @@ const Footer = ({ onContactClick, onPrivacyClick, onTermsClick, onDisclaimerClic
                 <div className="footer-links">
                     <div className="link-group">
                         <h4>Services</h4>
-                        <a href="#scaling">Business Scaling</a>
-                        <a href="#web-design">Web Design</a>
-                        <a href="#automation">Automation</a>
+                        <a href="#credit-building">Business Credit Building</a>
+                        <a href="#tax-filing">Tax Filing Made Easy</a>
+                        <a href="#notary">24/7 Notary</a>
+                        <a href="#agreements">Agreement & Contract Prep</a>
+                        <a href="#trusts">Trust Formations</a>
+                        <a href="#partnerships">Strategic Partnership</a>
                     </div>
                     <div className="link-group">
                         <h4>Company</h4>
@@ -30,6 +33,9 @@ const Footer = ({ onContactClick, onPrivacyClick, onTermsClick, onDisclaimerClic
                         <a href="https://www.linkedin.com/company/square-biz-ai/people/?viewAsMember=true" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                         <a href="https://twitter.com/squarebizai" target="_blank" rel="noopener noreferrer">Twitter</a>
                         <a href="https://instagram.com/squarebizai" target="_blank" rel="noopener noreferrer">Instagram</a>
+                        <a href="https://facebook.com/squarebizai" target="_blank" rel="noopener noreferrer">Facebook</a>
+                        <a href="https://tiktok.com/@squarebizai" target="_blank" rel="noopener noreferrer">TikTok</a>
+                        <a href="https://youtube.com/@squarebizai" target="_blank" rel="noopener noreferrer">YouTube</a>
                     </div>
                 </div>
             </div>

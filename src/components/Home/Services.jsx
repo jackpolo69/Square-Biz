@@ -16,6 +16,7 @@ const services = [
         description: "Exclusive access to funding and credit building tools."
     },
     {
+        id: "formation",
         icon: <Briefcase size={40} />,
         title: "Business Formation",
         description: "Streamlined entity setup and registration."
@@ -36,6 +37,7 @@ const services = [
         description: "Restore your business to good standing."
     },
     {
+        id: "tax-filing",
         icon: <FileText size={40} />,
         title: "Tax Filing Made Easy",
         description: "Simplified tax preparation and filing."
@@ -46,11 +48,13 @@ const services = [
         description: "Regulatory adherence and filing compliance."
     },
     {
+        id: "notary",
         icon: <Stamp size={40} />,
         title: "24/7 Notary",
         description: "Round-the-clock notarization services."
     },
     {
+        id: "agreements",
         icon: <Scroll size={40} />,
         title: "Agreement & Contract Prep",
         description: "Fully executable contracts and agreements."
@@ -61,16 +65,19 @@ const services = [
         description: "Liability and asset protection coverage."
     },
     {
+        id: "trusts",
         icon: <Landmark size={40} />,
         title: "Trust Formations",
         description: "Secure asset protection and estate planning structures."
     },
     {
+        id: "credit-building",
         icon: <TrendingUp size={40} />,
         title: "Business Credit Building",
         description: "Build credit with NO personal guarantee up to Tier 3."
     },
     {
+        id: "partnerships",
         icon: <Handshake size={40} />,
         title: "Strategic Partnership",
         description: "30% Equity + 30% Rev Share. We handle all your business needs exponentially."
@@ -82,11 +89,13 @@ const services = [
         description: "Stunning, high-performance websites that convert."
     },
     {
+        id: "funnels",
         icon: <Database size={40} />,
         title: "Automated Sales Funnels",
         description: "Self-driving revenue generation systems."
     },
     {
+        id: "branding",
         icon: <PenTool size={40} />,
         title: "Media & Branding",
         description: "Compelling visual identity and brand storytelling."
