@@ -13,11 +13,32 @@ const ContactForm = () => {
         setFormData({ ...formData, [e.target.name]: e.target.value })
     }
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault()
-        const subject = `Inquiry from ${formData.name}`
-        const body = `Name: ${formData.name}%0D%0AEmail: ${formData.email}%0D%0A%0D%0AMessage:%0D%0A${formData.message}`
-        window.location.href = `mailto:info@squarebiz.ai?subject=${subject}&body=${body}`
+        const btn = e.target.querySelector('button[type="submit"]')
+        const originalText = btn.textContent
+
+        try {
+            btn.disabled = true
+            btn.textContent = 'TRANSMITTING...'
+
+            const response = await fetch('http://localhost:8787/contact', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData)
+            })
+
+            if (!response.ok) throw new Error('Failed to transmit communique.')
+
+            alert('Mission directive received. We will be in touch shortly.')
+            setFormData({ name: '', email: '', message: '' })
+        } catch (error) {
+            console.error(error)
+            alert('Transmission failure. Please email info@squarebiz.ai directly.')
+        } finally {
+            btn.disabled = false
+            btn.textContent = originalText
+        }
     }
 
     return (
